@@ -15,7 +15,7 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
-      { 
+      {   
         "@type": "WebSite",
         "@id": "https://vindy.ai/#website",
         url: "https://vindy.ai",
