@@ -17,15 +17,15 @@ export default function Home() {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://landing-page-vindy.vercel.app/#website",
-        url: "https://landing-page-vindy.vercel.app",
+        "@id": "https://vindy.ai/#website",
+        url: "https://vindy.ai",
         name: "Vindy",
         description:
           "Automate your hiring process with AI-powered voice assistant",
       },
       {
         "@type": "FAQPage",
-        "@id": "https://landing-page-vindy.vercel.app/#faq",
+        "@id": "https://vindy.ai/#faq",
         mainEntity: [
           {
             "@type": "Question",

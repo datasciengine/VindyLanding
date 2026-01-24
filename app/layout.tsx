@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://landing-page-vindy.vercel.app"),
+  metadataBase: new URL("https://vindy.ai"),
   title: {
     default: "Vindy — AI Voice Assistant to Automate Your Hiring Process",
     template: "%s | Vindy",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://landing-page-vindy.vercel.app",
+    url: "https://vindy.ai",
     siteName: "Vindy",
     title: "Vindy — AI Voice Assistant to Automate Your Hiring Process",
     description:
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   alternates: {
-    canonical: "https://landing-page-vindy.vercel.app",
+    canonical: "https://vindy.ai",
   },
 };
 
