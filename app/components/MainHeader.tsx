@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { trackCTAClick } from "../lib/gtm";
 
 const navLinks = [
   { href: "#features", label: "Features" },
@@ -12,6 +13,10 @@ const navLinks = [
 
 export function MainHeader() {
   const [open, setOpen] = useState(false);
+
+  const handleCTAClick = (location: string) => {
+    trackCTAClick("Get started", location, "#demo");
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-30 border-b border-slate-800/60 bg-black/80 backdrop-blur-sm">
@@ -51,6 +56,7 @@ export function MainHeader() {
 
           <a
             href="#demo"
+            onClick={() => handleCTAClick("get_started_header_section")}
             className="hidden min-h-[48px] min-w-[48px] items-center justify-center gap-[10px] rounded-[4px] bg-[#2962FF] px-[18px] py-2 text-[14px] font-medium text-white hover:bg-[#2f6dff] md:inline-flex touch-manipulation"
           >
             Get started
@@ -97,13 +103,16 @@ export function MainHeader() {
                   {link.label}
                 </a>
               ))}
-              <button
-                type="button"
+              <a
+                href="#demo"
                 className="mt-3 inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-[6px] bg-[#2962FF] px-[18px] text-[13px] font-medium text-white hover:bg-[#2f6dff] touch-manipulation"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  handleCTAClick("header_mobile");
+                  setOpen(false);
+                }}
               >
                 Get started
-              </button>
+              </a>
             </nav>
           </div>
         </div>

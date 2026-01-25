@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { GTMTracking } from "./components/GTMTracking";
 import "./globals.css";
 
 const inter = Inter({
@@ -91,10 +92,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} antialiased bg-white text-slate-50`}
+        suppressHydrationWarning
       >
+        <Script
+          id="gtm-dataLayer-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];`,
+          }}
+        />
         {/* Google Tag Manager */}
         <Script
           id="google-tag-manager"
@@ -116,6 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <GTMTracking />
         {children}
       </body>
     </html>
