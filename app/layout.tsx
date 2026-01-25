@@ -78,6 +78,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vindy.ai",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
