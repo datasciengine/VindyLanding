@@ -1,13 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import { RiVoiceAiLine } from "react-icons/ri";
-import { trackCTAClick } from "../lib/gtm";
 
 export function Hero() {
-  const handleCTAClick = () => {
-    trackCTAClick("Talk to Vindy", "talk_to_vindy_section", "#demo");
-  };
   return (
     <section
       id="hero"
@@ -69,8 +63,8 @@ export function Hero() {
 
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <a
+              id="cta-talk-to-vindy"
               href="#demo"
-              onClick={handleCTAClick}
               className="inline-flex items-center justify-center min-h-[48px] min-w-[48px] rounded-[6px] bg-[#2962FF] px-[28px] py-[12px] text-xs font-semibold uppercase text-white sm:px-[35px] sm:py-[14px] touch-manipulation"
             >
               <RiVoiceAiLine aria-hidden="true" className="mr-2 h-4 w-4" />
