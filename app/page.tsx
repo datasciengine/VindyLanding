@@ -20,8 +20,13 @@ export default function Home() {
         "@id": "https://vindy.ai/#website",
         url: "https://vindy.ai",
         name: "Vindy",
+        alternateName: "Vindy AI",
         description:
           "Automate your hiring process with AI-powered voice assistant",
+        publisher: {
+          "@type": "Organization",
+          name: "Vindy",
+        },
       },
       {
         "@type": "FAQPage",
