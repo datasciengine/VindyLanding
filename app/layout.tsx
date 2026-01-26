@@ -79,9 +79,14 @@ export const metadata: Metadata = {
     canonical: "https://vindy.ai",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "32x32" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: [
+      { url: "/favicon.ico", sizes: "180x180" },
+    ],
   },
 };
 
