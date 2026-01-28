@@ -5,7 +5,7 @@ export function OwnYourAI() {
   return (
     <section
       id="cta"
-      aria-label="Own your AI, don't rent it"
+      aria-label="full ownership, zero dependency"
       className="relative overflow-hidden bg-[#0a0a1a] py-24 sm:py-32"
     >
       <Image
@@ -53,7 +53,7 @@ export function OwnYourAI() {
           <div className="mt-8 flex justify-center">
             <a
               id="cta-start-free-trial"
-              href="#demo"
+              href="https://vinter.me/contact/"
               className="inline-flex items-center justify-center min-h-[48px] min-w-[48px] gap-2 rounded-lg bg-[#2962FF] px-6 py-3 text-[14px] font-medium uppercase text-white shadow-lg transition hover:bg-[#2f6dff] sm:px-8 touch-manipulation"
             >
               Start Free Trial

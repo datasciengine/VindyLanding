@@ -12,7 +12,7 @@ const performanceCards = [
   {
     id: 2,
     image: "/performance/performance_2.png",
-    metric: "100+",
+    metric: "27+",
     title: "GLOBAL REACH",
     description: "Languages supported",
     bgColor: "#03185159",
@@ -29,7 +29,7 @@ const performanceCards = [
     id: 4,
     image: "/performance/performance_4.png",
     metric: "24/7",
-    title: "ALWAYS AVAILABLE",
+    title: "CONSISTENT AVAILABLITY",
     description: "Never miss a call",
     bgColor: "#03185159",
   },

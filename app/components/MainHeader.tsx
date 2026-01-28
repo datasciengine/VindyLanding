@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "#features", label: "Features" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#about", label: "About" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#cta", label: "Contact" },
 ];
 
 export function MainHeader() {
@@ -54,7 +54,7 @@ export function MainHeader() {
             href="#demo"
             className="hidden min-h-[48px] min-w-[48px] items-center justify-center gap-[10px] rounded-[4px] bg-[#2962FF] px-[18px] py-2 text-[14px] font-medium text-white hover:bg-[#2f6dff] md:inline-flex touch-manipulation"
           >
-            Get started
+            Sign up
           </a>
 
           <button

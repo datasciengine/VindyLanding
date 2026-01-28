@@ -3,7 +3,7 @@ import Image from "next/image";
 const steps = [
   {
     number: "01",
-    title: "Setup",
+    title: "Create",
     description: "Connect your phone system and customize Vindy in minutes.",
   },
   {
@@ -18,7 +18,7 @@ const steps = [
   },
   {
     number: "04",
-    title: "Customize",
+    title: "Report",
     description: "Fine-tune responses based on your unique needs.",
   },
 ];
@@ -44,13 +44,13 @@ export function HowToWork() {
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto text-center">
           <p className="text-[16px] font-medium uppercase leading-[100%] tracking-[0.1em] text-[#686E75]">
-            How to Work
+            HOW IT WORKS
           </p>
           <h2 className="mt-3 text-[45px] font-bold uppercase leading-[53px] tracking-[0] text-[#040D19] sm:text-[40px] sm:leading-[48px] lg:text-[45px] lg:leading-[53px]">
             Go Lıve ın 4 Sımple Steps
           </h2>
           <p className="mt-3 text-[18px] leading-[150%] tracking-[0.01em] text-[#686E75] sm:text-[18px]">
-            From signup to your first automated call in under 10 minutes.
+    Launch your first automated call in under 10 minutes.
           </p>
         </div>
 
