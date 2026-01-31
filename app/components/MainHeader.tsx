@@ -76,7 +76,7 @@ export function MainHeader() {
       {open && (
         <div className="fixed inset-0 z-20 bg-black/70 md:hidden">
           <div className="absolute right-0 top-0 h-full w-64 bg-[#050712] shadow-xl">
-            <div className="flex items-center justify-between px-5 py-4">
+            <div className="flex items-center justify-between px-5 py-3">
               <span className="text-sm font-semibold text-white">Menu</span>
               <button
                 type="button"
@@ -87,7 +87,7 @@ export function MainHeader() {
                 ✕
               </button>
             </div>
-            <nav className="mt-2 flex flex-col gap-2 px-5 text-sm font-medium text-slate-100">
+            <nav className="bg-[#050712]/80 flex flex-col gap-2 px-5 text-sm font-medium text-slate-100">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -101,7 +101,7 @@ export function MainHeader() {
               <a
                 id="cta-get-started-mobile"
                 href="#demo"
-                className="mt-3 inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-[6px] bg-[#2962FF] px-[18px] text-[13px] font-medium text-white hover:bg-[#2f6dff] touch-manipulation"
+                className="mt-3 mb-3 inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-[6px] bg-[#2962FF] px-[18px] text-[13px] font-medium text-white hover:bg-[#2f6dff] touch-manipulation"
                 onClick={() => setOpen(false)}
               >
                 Get started

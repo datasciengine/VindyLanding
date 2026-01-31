@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
+  --animate-trusted-marquee: trusted-marquee 30s linear infinite;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,4 +28,14 @@ body {
 /* Touch target optimization */
 a, button {
   touch-action: manipulation;
+}
+
+/* Trusted brands marquee */
+@keyframes trusted-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
