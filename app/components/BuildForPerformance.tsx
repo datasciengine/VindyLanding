@@ -72,7 +72,7 @@ export function BuildForPerformance() {
           </p>
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-[1213px] grid-cols-1 gap-5 justify-items-center opacity-50 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-[1213px] grid-cols-1 gap-5 justify-items-center  sm:grid-cols-2 lg:grid-cols-3">
           {performanceCards.map((card) => (
             <article
               key={card.id}
