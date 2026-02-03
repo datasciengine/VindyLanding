@@ -6,6 +6,7 @@ import { GradientFeatureBackground } from "./components/GradientFeatureBackgroun
 import { Hero } from "./components/Hero";
 import { HeroMetricsStrip } from "./components/HeroMetricsStrip";
 import { HowToWork } from "./components/HowToWork";
+import { DemoCallSection } from "./components/DemoCallSection";
 import { MainHeader } from "./components/MainHeader";
 import { OwnYourAI } from "./components/OwnYourAI";
 import { PotentialSavings } from "./components/PotentialSavings";
@@ -86,6 +87,7 @@ export default function Home() {
         <BuildForPerformance />
         <HowToWork />
         <PotentialSavings />
+        <DemoCallSection />
         <OwnYourAI />
         <FAQ />
         <Footer />
